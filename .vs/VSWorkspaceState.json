@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin",
+    "\\Components",
+    "\\Components\\Layout",
+    "\\Components\\Pages",
+    "\\obj",
+    "\\Properties"
+  ],
+  "SelectedNode": "\\Components\\Layout\\MainLayout.razor",
+  "PreviewInSolutionExplorer": false
+}
