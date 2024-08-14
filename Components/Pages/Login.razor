@@ -31,20 +31,26 @@
 
     private void Clear(){
         Email = "";
-            Password = "";
+        Password = "";
     }
 
     private void HandleLogin()
     {
-        Email = "admin@umat.edu.gh";
-        Password = "umat";
-        if (Email == "admin@umat.edu.gh" && Password == "umat")
+        if (string.IsNullOrWhiteSpace(Email))
+        {
+            Console.WriteLine("Please enter your email");
+        }
+        else if (string.IsNullOrWhiteSpace(Password))
+        {
+            Console.WriteLine("Please enter your password");
+        }
+        else if (Email == "admin@umat.edu.gh" && Password == "12345")
         {
             NavigationManager.NavigateTo("/dashboard");
         }
-        else{
-            Email = "";
-            Password = "";
+        else
+        {
+            Clear(); // Clear the form fields if login fails
         }
     }
 }
